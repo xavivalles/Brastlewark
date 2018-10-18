@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  flex-shrink: 0;
+  background-color:black;
+  justify-content: center;  
+}
+
+.header-title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  color:white;
+}
