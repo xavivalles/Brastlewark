@@ -1,2 +1,0 @@
-# Brastlewark
-Town of Gnomes
