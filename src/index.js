@@ -1,6 +1,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from 'react-router-dom';
 import "./index.css";
 import App from "./containers/App/App";
 import serviceWorker from "./serviceWorker";
@@ -30,7 +31,9 @@ sagaMiddleware.run(watcherSaga);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

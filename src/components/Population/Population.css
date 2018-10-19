@@ -1,0 +1,13 @@
+.population {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.text-style {
+  width: 50%;
+  font-family: 'Indie Flower';
+  font-size: 17px !important;
+  color:black;
+}

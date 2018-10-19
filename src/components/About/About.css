@@ -1,0 +1,21 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+  margin-left: 2%;
+
+}
+
+.image {
+  width: 100px;
+  width: 50%;
+}
+
+.text-style {
+  width: 50%;
+  font-family: 'Indie Flower';
+  font-size: 20px;
+  color:black;
+}

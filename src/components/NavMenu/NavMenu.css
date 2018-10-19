@@ -1,0 +1,18 @@
+.nav-style {
+  background-color: dimgrey;
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.nav-font-color {
+  color: white;
+}
+
+.navbar-nav :hover{
+  background-color: darkgray;
+}
+
+

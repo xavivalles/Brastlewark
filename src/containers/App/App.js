@@ -9,7 +9,7 @@ import "./App.css";
 
 class App extends Component {
   render() {
-    const { fetching, dog, onRequestDog, error } = this.props;
+    const { fetching, brastlewark, onRonRequestBrastlewarkequestDog, error } = this.props;
 
     return (
       <div className="App">
@@ -31,7 +31,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onRequestDog: () => dispatch({ type: "API_CALL_REQUEST" })
+    onRequestBrastlewark: () => dispatch({ type: "API_CALL_REQUEST" })
   };
 };
 

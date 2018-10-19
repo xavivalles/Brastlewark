@@ -9,6 +9,9 @@
 .footer-text{
   font-family: 'Indie Flower';
   font-size: 18px;
-  color:white;   
+  color:white;
 }
-  
+
+p { 
+  margin: 15px;
+}
