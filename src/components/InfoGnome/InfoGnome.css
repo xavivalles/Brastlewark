@@ -1,0 +1,47 @@
+.modal-body {
+  display:flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.modal-content {
+  display:flex;
+  justify-content: center;
+  width: 600px;
+  height: 750px;
+}
+
+img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal-image {
+  display:flex;
+  justify-content: center;
+  margin-top: 0px;
+  max-width:250px;
+  max-height:250px;
+}
+
+.modal-main {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  min-width:300px;
+  min-height:300px;
+  min-width:250px;
+  min-height:250px;
+}
+
+.modal-button {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+}
+
+

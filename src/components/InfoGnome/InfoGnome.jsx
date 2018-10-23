@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Modal, Image } from 'react-bootstrap';
-
+import "./InfoGnome.css";
 class InfoGnome extends PureComponent {
   constructor(props) {
     super(props);
@@ -36,21 +36,28 @@ class InfoGnome extends PureComponent {
   render() {
     const { showModal, popUpHide, rowData } = this.props;
     debugger;
+    if (!rowData) return null;
     return (
-      <div>
+      <div className="modal">
         <Modal show={showModal} onHide={popUpHide}>
           <Modal.Body>
-            <Image src={rowData.thumbnail} responsive circle/>;
-            <h2>{rowData.name}</h2>
-            <div className="modal-custom-text space-top">
-              <p>You must have an approved Change Order to make this product available to customers.</p>
-              <div className="space-top custom-line-height">
-                <p>Please enter the Change Order number below:</p>
-                <p>*Change Order number is required.</p>
-              </div>
+            <div className="modal-body">
+              <div className="modal-image">
+                <Image src={rowData.thumbnail} responsive />;
             </div>
-            <div className="text-center space-top-double">
-              <button className="cancel-button space-left no-save" onClick={this.cancel}>CANCEL</button>
+              <h2>{rowData.name}</h2>
+              <div className="modal-main">
+                <strong>ID: </strong>{rowData.id}
+                <strong>AGE: </strong>{rowData.age}
+                <strong>WEIGHT: </strong>{rowData.weight}
+                <strong>HEIGHT: </strong>{rowData.height}
+                <strong>HAIR: </strong>{rowData.hair_color}
+                <strong>PROFESSIONS: </strong>{rowData.professions}
+                <strong>FRIENDS:</strong>{rowData.friends}
+              </div>
+              <div className="modal-button">
+                <button onClick={this.cancel}>BACK</button>
+              </div>
             </div>
           </Modal.Body>
         </Modal>
