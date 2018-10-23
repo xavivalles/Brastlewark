@@ -1,0 +1,9 @@
+.react-grid-HeaderCell,
+.react-grid-Cell {
+  box-sizing: border-box;
+}
+
+.react-grid-Toolbar{
+  background-color: grey !important;
+  border-right: 50%;
+}
