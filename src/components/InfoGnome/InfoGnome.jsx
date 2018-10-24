@@ -33,27 +33,42 @@ class InfoGnome extends PureComponent {
     popUpHide();
   }
 
+  printObjectStrings = (objStrings) => {
+    debugger
+    var printedStrings = Object.keys(objStrings).map(key => {
+      return <div>{objStrings[key]}</div>
+    });
+    return printedStrings;
+  }
+
   render() {
     const { showModal, popUpHide, rowData } = this.props;
-    debugger;
     if (!rowData) return null;
     return (
       <div className="modal">
         <Modal show={showModal} onHide={popUpHide}>
           <Modal.Body>
-            <div className="modal-body">
-              <div className="modal-image">
-                <Image src={rowData.thumbnail} responsive />;
-            </div>
-              <h2>{rowData.name}</h2>
-              <div className="modal-main">
-                <strong>ID: </strong>{rowData.id}
-                <strong>AGE: </strong>{rowData.age}
-                <strong>WEIGHT: </strong>{rowData.weight}
-                <strong>HEIGHT: </strong>{rowData.height}
-                <strong>HAIR: </strong>{rowData.hair_color}
-                <strong>PROFESSIONS: </strong>{rowData.professions}
-                <strong>FRIENDS:</strong>{rowData.friends}
+            <div className="modal-full">
+              <div className="modal-body">
+                <div className="modal-image">
+                  <Image src={rowData.thumbnail} responsive />;
+                </div>
+                <div className="modal-main">
+                  <div className="two-elements-row"> <h2>{rowData.name}</h2> </div>
+                  <div className="three-elements-row">
+                    <div className="same-column"><strong>ID: </strong>{rowData.id}</div>
+                    <div className="same-column"><strong>AGE: </strong>{rowData.age}</div>
+                    <div className="same-column"><strong>HAIR: </strong>{rowData.hair_color}</div>
+                  </div>
+                  <div className="two-elements-row">
+                    <div className="same-column"> <strong>WEIGHT: </strong>{rowData.weight} </div>
+                    <div className="same-column"> <strong>HEIGHT: </strong>{rowData.height}</div>
+                  </div>
+                  <div className="two-elements-row">
+                    <div className="same-column"> <strong>PROFESSIONS: </strong>{this.printObjectStrings(rowData.professions)}</div>
+                    <div className="same-column"> <strong>FRIENDS:</strong>{this.printObjectStrings(rowData.friends)}</div>
+                  </div>
+                </div>
               </div>
               <div className="modal-button">
                 <button onClick={this.cancel}>BACK</button>
