@@ -47,7 +47,7 @@ class InfoGnome extends PureComponent {
     return (
       <div className="modal">
         <Modal show={showModal} onHide={popUpHide}>
-          <Modal.Body  bsStyle="default" style={{"background-color": rowData.hair_color}}>
+          <Modal.Body  bsStyle="default" style={{backgroundColor: rowData.hair_color}}>
             <div className="modal-full">
               <div className="modal-top">
                 <div className="modal-image">

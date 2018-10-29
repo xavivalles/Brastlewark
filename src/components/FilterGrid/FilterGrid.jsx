@@ -69,10 +69,12 @@ export class FilterGrid extends Component {
   };
 
   onRowClick = (rowIdx, row) => {
-    row.professions = row.professions.split(' - ');
-    row.friends = row.friends.split(' - ');
-    this.setState({ row: row });
-    this.infoGnomeOpen();
+    if(row){
+      row.professions = row.professions.split(' - ');
+      row.friends = row.friends.split(' - ');
+      this.setState({ row: row });
+      this.infoGnomeOpen();
+    }
   };
 
   handleGridSort = (sortColumn, sortDirection) => {

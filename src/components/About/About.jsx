@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Image from 'react-bootstrap/es/Image';
-import thorin from './thorin.jpg';
+import warrior from './warrior.jpg';
 import './About.css'
 
 export class About extends Component {
@@ -9,7 +9,7 @@ export class About extends Component {
     return (
       <div className="about">
         <div>
-          <Image src={thorin} responsive />
+          <Image src={warrior} responsive />
         </div >
         <div className="text-style">
           <p><strong>Mr. Tobus Quickwhistle</strong></p>

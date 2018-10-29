@@ -7,3 +7,11 @@
   background-color: grey !important;
   border-right: 50%;
 }
+
+.react-grid-Header {
+  background-color:  #C0C0C0  !important;
+}
+
+.react-grid-HeaderCell {
+  background-color: #C0C0C0  !important;
+}
