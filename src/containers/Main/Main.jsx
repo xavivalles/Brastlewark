@@ -13,6 +13,7 @@ class Main extends Component {
 
   render() {
     const { brastlewark } = this.props;
+    debugger
     return (
       <div className="main">
         <Router brastlewark={brastlewark} />

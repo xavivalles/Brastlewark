@@ -1,11 +1,19 @@
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: beige;
   width: 100%;
   height: 100%;
+  font-family: 'Indie Flower';
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
@@ -15,11 +23,7 @@
 
 .text-style {
   width: 50%;
-  font-family: 'Indie Flower';
   color:black;
   padding-left: 100px;
-}
-
-p {
-  font-size: 25px;
+  font-size: 25px !important;
 }

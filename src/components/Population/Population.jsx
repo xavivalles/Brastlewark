@@ -9,6 +9,7 @@ export class Population extends Component {
     const { brastlewark } = this.props;
     return (
       <div className="population">
+        <h1>POPULATION</h1>
         <div className="text-style">
           <p>The gnomes in this city are not really social because they have a lot of work to do.</p>
           <p>For this reason we have implemented a method to search for them easily.</p>
