@@ -4,6 +4,8 @@
   background-color: black;
   justify-content: center;
   align-items: center;
+  bottom: 0px;
+  height: 10%;
 }
 
 .footer-text{

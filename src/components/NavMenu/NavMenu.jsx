@@ -8,10 +8,7 @@ class NavMenu extends Component {
       <Navbar className="nav-style" fluid staticTop>
         <Navbar.Collapse>
           <Nav id="basic-nav">
-            <NavItem eventKey={1} href="/">
-              <span className="nav-font-color">History</span>
-            </NavItem>
-            <NavItem eventKey={2} href="/population">
+            <NavItem eventKey={2} href="/">
               <span className="nav-font-color">Population</span>
             </NavItem>
             <NavItem eventKey={3} href="/about">

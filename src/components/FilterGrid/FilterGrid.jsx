@@ -32,7 +32,7 @@ export class FilterGrid extends Component {
     const rows = this.getRows();
     let txtProfessionsLength = 0;
     let txtFriendsLength = 0;
-    rows.map(row => {
+    rows.forEach(row => {
       const txtProfessionsLengthUpdated = calculateSize(row.professions, {
         font: 'Helvetica,Arial,sans-serif',
         fontSize: '14px'

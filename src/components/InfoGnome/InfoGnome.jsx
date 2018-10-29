@@ -36,7 +36,7 @@ class InfoGnome extends PureComponent {
   printObjectStrings = (objStrings) => {
     debugger
     var printedStrings = Object.keys(objStrings).map(key => {
-      return <div>{objStrings[key]}</div>
+      return <div key={key}>{objStrings[key]}</div>
     });
     return printedStrings;
   }
@@ -47,36 +47,57 @@ class InfoGnome extends PureComponent {
     return (
       <div className="modal">
         <Modal show={showModal} onHide={popUpHide}>
-          <Modal.Body>
+          <Modal.Body  bsStyle="default" style={{"background-color": rowData.hair_color}}>
             <div className="modal-full">
-              <div className="modal-body">
+              <div className="modal-top">
                 <div className="modal-image">
                   <Image src={rowData.thumbnail} responsive />;
                 </div>
                 <div className="modal-main">
-                  <div className="two-elements-row"> <h2>{rowData.name}</h2> </div>
-                  <div className="three-elements-row">
-                    <div className="same-column"><strong>ID: </strong>{rowData.id}</div>
-                    <div className="same-column"><strong>AGE: </strong>{rowData.age}</div>
-                    <div className="same-column"><strong>HAIR: </strong>{rowData.hair_color}</div>
+                  <div className="row-title">
+                    <h1>{rowData.name}</h1>
                   </div>
-                  <div className="two-elements-row">
-                    <div className="same-column"> <strong>WEIGHT: </strong>{rowData.weight} </div>
-                    <div className="same-column"> <strong>HEIGHT: </strong>{rowData.height}</div>
-                  </div>
-                  <div className="two-elements-row">
-                    <div className="same-column"> <strong>PROFESSIONS: </strong>{this.printObjectStrings(rowData.professions)}</div>
-                    <div className="same-column"> <strong>FRIENDS:</strong>{this.printObjectStrings(rowData.friends)}</div>
+                  <div className="row-data">
+                    <div className="column">
+                      <div className="margin-bottom-title-row">
+                        <strong>AGE</strong>
+                        {rowData.age}
+                      </div>
+                      <div className="margin-bottom-title-row">
+                        <strong>WEIGHT</strong>
+                        {rowData.weight}
+                      </div>
+                      <div className="margin-bottom-title-row">
+                        <strong>PROFESSIONS</strong>
+                        {this.printObjectStrings(rowData.professions)}
+                      </div>
+                    </div>
+                    <div className="column">
+                      <div className="margin-bottom-title-row">
+                        <strong>HAIR</strong>
+                        {rowData.hair_color}
+                      </div>
+                      <div className="margin-bottom-title-row">
+                        <strong>HEIGHT</strong>
+                        {rowData.height}
+                      </div>
+                      <div className="margin-bottom-title-row">
+                        <strong>FRIENDS</strong>
+                        {this.printObjectStrings(rowData.friends)}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="modal-button">
-                <button onClick={this.cancel}>BACK</button>
+              <div className="modal-botom">
+                <div className="modal-button">
+                  <button onClick={this.cancel}><strong>R E T U R N</strong></button>
+                </div>
               </div>
             </div>
           </Modal.Body>
         </Modal>
-      </div>
+      </div >
     );
   }
 }

@@ -1,15 +1,29 @@
+.modal-dialog {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  top: 12%;
+  font-size: 18px;
+  font-family: 'Indie Flower';
+}
+
 .modal-content {
   display:flex;
   justify-content: center;
-  width: 1000px;
-  height: 700px;
+  width: 700px;
+  height: 500px;
 }
 
 .modal-body {
+  background-color: brown;
+}
+
+.modal-top {
   display:flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
+  width: 700px;
+  height: 90%;
+  /* background-color: brown; */
 }
 
 .modal-full{
@@ -17,15 +31,16 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  background-color: beige;
 }
 
 .modal-image {
   display:flex;
   justify-content: center;
   align-content: center;
-  margin: 40px;
-  width:60%;
-  height: 80%;
+  padding: 20px;
+  width: 45%;
+  height: 100%;
 }
 
 img {
@@ -39,44 +54,81 @@ img {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 40px;
-  width: 40%;
-  height: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 55%;
+  height: 100%;
 }
 
-.two-elements-row{
+.row-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.row-data {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: left;
+}
+
+.margin-bottom-title-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.elements-row{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.three-elements-row{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .same-column {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
-.modal-button {
+.margin-elements {
+  margin-bottom: 20px;
+}
+
+.title-column-right {
+  text-align: right;
+}
+
+.modal-botom {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-content: center;
   width: 100%;
-  height: 20%;
+  height: 10%;
   padding-left: 30%;
   padding-right: 30%;
   padding-bottom: 5%;
 }
 
+.modal-button {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: 25px;
+}
 
+button{
+  width: 100;
+}
