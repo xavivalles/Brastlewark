@@ -14,7 +14,7 @@ export class Population extends Component {
           <p>For this reason we have implemented a method to search for them easily.</p>
         </div>
         <div className="grid-style">
-          <FilterGrid brastlewark={brastlewark} />
+          {brastlewark && <FilterGrid brastlewark={brastlewark} />}
         </div>
       </div>
     );

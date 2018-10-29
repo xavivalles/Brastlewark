@@ -13,7 +13,6 @@ class Main extends Component {
 
   render() {
     const { brastlewark } = this.props;
-    if (brastlewark === null) return null;
     return (
       <div className="main">
         <Router brastlewark={brastlewark} />
