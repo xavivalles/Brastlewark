@@ -2,5 +2,6 @@
   flex: 1 0 auto;
   height: 70%;
   background-color: beige;
-  overflow: auto;
+  margin-top: 170px;
+  padding-bottom: 150px;
 }

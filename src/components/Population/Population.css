@@ -29,8 +29,12 @@
   padding-bottom:30px;
 }
 
+.bottom-separator-table {
+  margin-bottom: 100px;
+}
+
 .bottom-separator-bottom {
-  margin-bottom:100px;
+  margin-bottom: 150px;
 }
 
 .grid-style {

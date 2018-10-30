@@ -1,11 +1,13 @@
 .footer{
+  position: fixed; 
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-shrink: 0;
-  background-color: black;
   justify-content: center;
   align-items: center;
   bottom: 0px;
-  height: auto;
+  z-index: 100;
+  background-color: black;
 }
 
 .footer-text{

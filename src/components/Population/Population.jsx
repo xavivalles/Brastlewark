@@ -19,7 +19,7 @@ export class Population extends Component {
             <li><p>If you click on one of them, we can see the information with a better view.</p></li>
           </ul>
         </div>
-        <div className="grid-style bottom-separator-bottom">
+        <div className="grid-style bottom-separator-table">
           {brastlewark && <FilterGrid brastlewark={brastlewark} />}
         </div>
         <div className="text-styles-bottom  bottom-separator-bottom">

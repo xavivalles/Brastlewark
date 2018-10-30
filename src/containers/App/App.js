@@ -7,12 +7,12 @@ import Footer from '../Footer/Footer';
 import "./App.css";
 
 class App extends Component {
-  // componentDidMount = () => {
-  //   const { onRequestBrastlewark, brastlewark } = this.props;
-  //   if (brastlewark === null) {
-  //     onRequestBrastlewark();
-  //   }
-  // }
+  componentDidMount = () => {
+    const { onRequestBrastlewark, brastlewark } = this.props;
+    if (brastlewark === null) {
+      onRequestBrastlewark();
+    }
+  }
 
   render() {
     const { brastlewark } = this.props;
