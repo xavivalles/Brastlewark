@@ -5,9 +5,10 @@ import calculateSize from 'calculate-size';
 import InfoGnome from '../InfoGnome/InfoGnome';
 import './FilterGrid.css';
 
-const { Toolbar, Data, Formatters } = require('react-data-grid-addons');
+const { Toolbar, Data, Formatters, Filters } = require('react-data-grid-addons');
 const { ImageFormatter } = Formatters;
 const { Selectors } = Data;
+const { NumericFilter } = Filters;
 
 export class FilterGrid extends Component {
   constructor(props, context) {
@@ -118,21 +119,24 @@ export class FilterGrid extends Component {
         name: 'AGE',
         filterable: true,
         sortable: true,
-        width: 50
+        width: 100,
+        filterRenderer: NumericFilter
       },
       {
         key: 'weight',
         name: 'WEIGHT',
         filterable: true,
         sortable: true,
-        width: 85
+        width: 100,
+        filterRenderer: NumericFilter
       },
       {
         key: 'height',
         name: 'HEIGHT',
         filterable: true,
         sortable: true,
-        width: 85
+        width: 100,
+        filterRenderer: NumericFilter
       },
       {
         key: 'hair_color',
@@ -171,7 +175,7 @@ export class FilterGrid extends Component {
           rowGetter={this.rowGetter}
           rowsCount={this.getSize()}
           rowHeight={60}
-          minHeight={380}
+          minHeight={520}
           toolbar={<Toolbar enableFilter={true} />}
           onRowClick={this.onRowClick}
           onAddFilter={this.handleFilterChange}

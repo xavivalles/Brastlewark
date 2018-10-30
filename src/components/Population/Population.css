@@ -9,10 +9,28 @@
   font-family: 'Indie Flower';
 }
 
-.text-style {
-  width: 50%;
-  font-size: 17px !important;
+.text-styles {
+  width: 70%;
+  font-size: 20px;
   color:black;
+}
+
+.text-styles-bottom {
+  width: 70%;
+  font-size: 30px;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.bottom-separator {
+  padding-bottom:30px;
+}
+
+.bottom-separator-bottom {
+  margin-bottom:100px;
 }
 
 .grid-style {
